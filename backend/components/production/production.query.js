@@ -1,5 +1,5 @@
 const createNewProduct = `
-  INSERT INTO production
+  INSERT INTO products
     (
     name, 
     price, 
@@ -12,7 +12,7 @@ const createNewProduct = `
 `;
 
 const updateProduct = `
-  UPDATE production
+  UPDATE products
   SET
     name= ?, 
     price= ?, 
@@ -20,37 +20,37 @@ const updateProduct = `
     description= ?, 
     availability_status= ?
   WHERE
-    production_id = ?
+    product_id = ?
 `;
 
 const isExistProduct = `
   SELECT
-    production_id
+    product_id
   FROM
-    production
+    products
   WHERE
-    production_id = ?
+    product_id = ?
 `;
 
 const getProduct = `
   SELECT
-    production_id,
+    product_id,
     name,
     price,
     category,
     description,
     availability_status
   FROM
-    production
+    products
   WHERE
     1
 `;
 
 const getProductCount = `
   SELECT
-    COUNT(DISTINCT production_id) AS total_count
+    COUNT(DISTINCT product_id) AS total_count
   FROM
-   production 
+   products 
   WHERE
     1
 `;
@@ -58,9 +58,9 @@ const getProductCount = `
 const deleteProduct = `
   DELETE 
   FROM 
-    production 
+    products 
   WHERE 
-   production_id= ?;
+   product_id= ?;
 `;
 
 module.exports = {

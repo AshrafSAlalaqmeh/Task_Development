@@ -20,7 +20,7 @@ class Production {
         newProduct.availability_status,
       ]);
       cb(null, {
-        production_id: result[0].insertId,
+        product_id: result[0].insertId,
         name: newProduct.name,
         price: newProduct.price,
         category: newProduct.category,
@@ -43,10 +43,10 @@ class Production {
         data.category,
         data.description,
         data.availability_status,
-        newData.production_id,
+        newData.product_id,
       ]);
       cb(null, {
-        production_id: newData.production_id,
+        product_id: newData.product_id,
         name: data.name,
         price: data.price,
         category: data.category,
@@ -76,7 +76,7 @@ class Production {
       let CountQuery = getProductCountQuery;
 
       const filters = {
-        production_id: "production_id",
+        product_id: "product_id",
         price: "price",
         category: "category",
         availability_status: "availability_status",
@@ -93,7 +93,7 @@ class Production {
       let finalQuery;
       let finalCountQuery;
 
-      finalQuery = `${query} ${filterQuery} GROUP BY production_id`;
+      finalQuery = `${query} ${filterQuery} GROUP BY product_id`;
       finalCountQuery = `${CountQuery}`;
 
       // Execute the queries

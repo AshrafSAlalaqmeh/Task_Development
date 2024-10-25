@@ -12,15 +12,15 @@ exports.createNewProduct = async (req, res) => {
 };
 
 exports.updateProduct = async (req, res) => {
-  const production_id = req.params.production_id;
+  const product_id = req.params.product_id;
 
-  const result = await Production.isExistProduct(production_id);
+  const result = await Production.isExistProduct(product_id);
   if (!result?.length) {
     return sendResponse(res, 404, false, "The product does not exist");
   }
 
   let obj = {
-    production_id: production_id,
+    product_id: product_id,
     body: req.body,
   };
   await Production.updateProduct(obj, (err, result) => {
@@ -43,14 +43,14 @@ exports.getProduct = async (req, res) => {
 };
 
 exports.deleteProduct = async (req, res) => {
-  const production_id = req.params.production_id;
+  const product_id = req.params.product_id;
 
-  const result = await Production.isExistProduct(production_id);
+  const result = await Production.isExistProduct(product_id);
   if (!result?.length) {
     return sendResponse(res, 404, false, "The product does not exist");
   }
 
-  await Production.deleteProduct(production_id, async (err, data) => {
+  await Production.deleteProduct(product_id, async (err, data) => {
     if (err) {
       return sendResponse(res, 403, false, err);
     } else {

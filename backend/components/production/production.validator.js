@@ -40,7 +40,7 @@ const createNewProduct = (req, res, next) => {
 
 const updateProduct = (req, res, next) => {
   const schema = Joi.object({
-    production_id: Joi.number().integer().min(1).required().messages({
+    product_id: Joi.number().integer().min(1).required().messages({
       "any.required": "The production ID is required.",
       "number.min": "The production ID must be greater than or equal to 1.",
     }),
@@ -75,11 +75,11 @@ const updateProduct = (req, res, next) => {
       }),
   });
 
-  req.params.production_id = req.params.production_id || null;
+  req.params.product_id = req.params.product_id || null;
   const { error, value } = schema.validate(
     {
       ...req.body,
-      production_id: req.params.production_id,
+      product_id: req.params.product_id,
     },
     { abortEarly: false }
   ); // Validate all fields and not just stop on first error
@@ -100,7 +100,7 @@ const updateProduct = (req, res, next) => {
 
 const deleteProduct = (req, res, next) => {
   const schema = Joi.object({
-    production_id: Joi.number().integer().min(1).required().messages({
+    product_id: Joi.number().integer().min(1).required().messages({
       "any.required": "The production ID is required.",
       "number.min": "The production ID must be greater than or equal to 1.",
     }),

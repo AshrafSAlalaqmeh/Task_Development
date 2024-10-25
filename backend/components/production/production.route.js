@@ -11,7 +11,7 @@ router.post(
 );
 
 router.put(
-  "/:production_id",
+  "/:product_id",
   validator.updateProduct,
   asyncHandler(productionController.updateProduct)
 );
@@ -19,7 +19,7 @@ router.put(
 router.get("/", asyncHandler(productionController.getProduct));
 
 router.delete(
-  "/:production_id",
+  "/:product_id",
   validator.deleteProduct,
   asyncHandler(productionController.deleteProduct)
 );
