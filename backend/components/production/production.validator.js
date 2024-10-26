@@ -67,7 +67,7 @@ const updateProduct = (req, res, next) => {
       .trim()
       .optional()
       .allow(null, "")
-      .valid("active", "unactive")
+      .valid("active", "inactive")
       .messages({
         "any.only":
           "The availability status must be either 'active' or 'unactive'.",

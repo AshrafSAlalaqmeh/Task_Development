@@ -100,7 +100,7 @@ class Production {
       const [result] = await pool.query(finalQuery + ";" + finalCountQuery);
 
       cb(null, {
-        items_list: result[0],
+        items_list: result[0].reverse(),
         total_items: result[1][0].total_count,
       });
     } catch (error) {
