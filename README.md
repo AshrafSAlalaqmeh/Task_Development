@@ -62,7 +62,7 @@ Now app ready to use
 
 ## 🏁 Contact me <a name = "contact_me"></a>
 Ashraf Suleiman Alalaqmeh
-Email: ashraf.alalaqmeh@gmail.com
-Phone: 0782464111
+- Email: ashraf.alalaqmeh@gmail.com
+- Phone: 0782464111
 
 
