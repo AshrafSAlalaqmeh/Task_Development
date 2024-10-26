@@ -52,27 +52,6 @@ Now app ready to use
 - You have a page with several products that you can add, modify, and delete
 
 
-<hr>
-
-- You can click on the **The ben To Edit Item**
-
-- You can click and **Delete Item**
-
-<img height=200px width=310px src="./frontend/public/UpdateAndDelete.png" alt="Delete">
-
-
-- When click on the **The ben To Edit Item** will view and you can Update to item
-<img height=200px width=310px src="./frontend/public/Update Task.png" alt="Update Task">
-
-<hr>
-
-- You can click on the **"+"** To Add new Item
-
-<img height=200px width=300px src="./frontend/public/Add item.png" alt="item">
-<hr>
-
-
-<hr>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
