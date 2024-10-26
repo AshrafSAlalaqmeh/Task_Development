@@ -1,6 +1,6 @@
 
 
-<h3 align="center">Item</h3>
+<h3 align="center">Task Development</h3>
 
 ---
 
@@ -52,7 +52,6 @@ Now app ready to use
 - You have a page with several products that you can add, modify, delete and filter
 
 
-
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [MySQL](https://dev.mysql.com/downloads/) - Database
@@ -61,6 +60,9 @@ Now app ready to use
 - [Node JS](https://nodejs.org/en/) - Server Environment
 
 
-
+## 🏁 Contact me <a name = "contact_me"></a>
+Ashraf Suleiman Alalaqmeh
+- Email: ashraf.alalaqmeh@gmail.com
+- Phone: 0782464111
 
 
