@@ -49,7 +49,7 @@ Now app ready to use
 ## 🎈 Usage <a name="usage"></a>
 
 
-- You have a page with several products that you can add, modify, and delete
+- You have a page with several products that you can add, modify, delete and filter
 
 
 
